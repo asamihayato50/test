@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+   <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js">
+        </script>
+   <script>
+        ons.bootstrap();
+    </script>
+</head>
+<body>
+<ons-sliding-menu swipeable="false" var="slidingMenu" menu-page="page1.html" main-page="page3.html" side="left" type="overlay" max-slide-distance="200px">
+        </ons-sliding-menu>
+    <ons-tabbar var="tabbar">
+        <ons-tabbar-item
+            icon="ion-coffee"
+            label="Coffee"
+            page="navigator.html"
+            active="true"></ons-tabbar-item>
+        <ons-tabbar-item
+            icon="comment"
+            label="Comments"
+            page="page2.html"></ons-tabbar-item>
+        <ons-tabbar-item
+            icon="gear"
+            label="Settings"
+            page="page3.html"></ons-tabbar-item>
+    </ons-tabbar>
+
+</body>
+</html>
